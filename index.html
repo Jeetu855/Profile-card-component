@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+
+	<title>Frontend Mentor | Profile card component</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: hsl(185, 75%, 39%);
+			background-image: url(images/bg-pattern-top.svg);
+			background-repeat: no-repeat;
+		}
+
+		.container {
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.top {
+			background-image: url(images/bg-pattern-card.svg);
+			width: 350px;
+			height: 150px;
+			border-radius: 15px 15px 0 0;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: relative;
+		}
+
+		.bottom {
+			background: white;
+			height: 250px;
+			width: 350px;
+			border-radius: 0 0 15px 15px;
+			position: relative;
+		}
+
+		img {
+			border-radius: 50%;
+			position: absolute;
+			bottom: -30%;
+			z-index: 3;
+		}
+
+		.grey-line {
+			width: 100%;
+			height: 1px;
+			background: rgb(199, 209, 201);
+			position: absolute;
+			bottom: 33%;
+		}
+
+		.name {
+			font-family: "Kumbh Sans", sans-serif;
+			font-weight: 700;
+			font-size: 1.2rem;
+			text-align: center;
+			position: absolute;
+			left: 30%;
+			top: 25%;
+		}
+
+		.city {
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 100;
+			opacity: 0.5;
+			position: absolute;
+			bottom: 45%;
+			left: 40%;
+		}
+
+		.media {
+			display: grid;
+			grid-template-rows: 20% 20%;
+			grid-template-columns: 50% 50% 50%;
+			font-family: "Kumbh Sans", sans-serif;
+			font-weight: 700;
+			font-size: 1.2rem;
+			text-align: center;
+			position: absolute;
+			bottom: -15%;
+			left: 10%;
+		}
+
+		.light {
+			opacity: 0.5;
+		}
+
+		.age {
+			opacity: 0.5;
+		}
+
+
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+			position: absolute;
+			bottom: 10%;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+</head>
+
+<body>
+	<section class="container">
+		<div class="top">
+			<img src="images/image-victor.jpg" alt="">
+		</div>
+		<div class="bottom">
+
+
+			<p class="name">Victor Crest <span class="age">26 </span></p>
+
+
+			<div class="city">
+				London
+			</div>
+			<div class="grey-line"></div>
+			<div class="media">
+				<p>80K</p>
+				<p>803K</p>
+				<p>1.4K</p>
+				<p class="light">Followers</p>
+
+				<p class="light">Likes</p>
+
+
+				<p class="light">Photos </p>
+
+			</div>
+
+		</div>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Jitesh Shamdasani</a>.
+		</div>
+	</section>
+</body>
+
+</html>
