@@ -18,6 +18,76 @@
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
+		* {
+			box-sizing: border-box;
+			font-family: "Kumbh Sans", sans-serif;
+		}
+
+		body {
+			background-color: hsl(185, 75%, 39%);
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+			padding: 0;
+			background-image: url(images/bg-pattern-top.svg);
+		}
+
+		.top {
+			height: 200px;
+			width: 400px;
+			background-image: url(images/bg-pattern-card.svg);
+			border-radius: 20px 20px 0 0;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			position: relative;
+		}
+
+		.bottom {
+			background-color: #fff;
+			height: 210px;
+			width: 400px;
+			border-radius: 0 0 20px 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.media {
+			display: grid;
+			grid-template-rows: repeat(2, auto);
+			grid-template-columns: repeat(3, auto);
+			justify-content: space-evenly;
+			width: 400px;
+			height: 80px;
+			background-color: #fff;
+			position: absolute;
+			bottom: 15%;
+			border-radius: 0 0 20px 20px;
+			border-top: 2px solid hsla(0, 0%, 59%, 0.4);
+		}
+
+		img {
+			border-radius: 50%;
+			border: 5px solid #fff;
+			position: absolute;
+			bottom: -20%;
+		}
+
+		.bold {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.light {
+			opacity: 0.5;
+		}
+
 		.attribution {
 			font-size: 11px;
 			text-align: center;
@@ -62,10 +132,10 @@
 
 		</div>
 
-		<!-- <div class="attribution">
+		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 			Coded by <a href="#">Jitesh Shamdasani</a>.
-		</div> -->
+		</div>
 	</section>
 </body>
 
